@@ -44,9 +44,9 @@
             <version>1.1.2</version>
             <scope>runtime</scope>
         </dependency>
- 
     </dependencies>
-     <profile>
+<profiles>    
+    <profile>
     <id>production</id>
     <activation>
      <activeByDefault>false</activeByDefault>
@@ -99,6 +99,7 @@
       </plugins>
     </build>
 </profile>
+</profiles>
     <build>
         <finalName>springmvcexample</finalName>
     </build>
