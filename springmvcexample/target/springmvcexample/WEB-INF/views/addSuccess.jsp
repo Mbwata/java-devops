@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %><%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
 <title>Spring MVC Form Handling</title>
@@ -10,22 +10,16 @@
 	<h2>Submitted Employee Information</h2>
 	<table>
 		<tr>
-			<td>F Name :</td>
-			<td>${employee.firstName}</td>
-                        <td>${employee}</td>
+			<td>Name :</td>
+			<td>${employee.firstName} ${employee.lastName}</td>
 		</tr>
 		<tr>
 			<td>ID :</td>
-			<td>${lastName}</td>
+			<td>${id}</td>
 		</tr>
 		<tr>
-			<td>Contact Number :</td>
-			<td>${email}</td>
-		</tr>
-                <tr>
-			<td>Test :</td>
-			<td><spring:message  text="email" /></td>
-                        <td><input type="text" name="email" value="email" /></td>
+			<td>Email :</td>
+			<td>${employee.email}</td>
 		</tr>
 	</table>
 </body>
