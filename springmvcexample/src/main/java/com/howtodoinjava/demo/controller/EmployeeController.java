@@ -63,7 +63,7 @@ public class EmployeeController
          
         //Mark Session Complete
         status.setComplete();
-        return "redirect:addNew/success";
+        return "addSuccess";
     }
      
     @RequestMapping(value = "/success", method = RequestMethod.GET)
