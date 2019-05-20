@@ -25,7 +25,7 @@ public class EmployeeVO implements Serializable
 	}
 
 	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+		this.firstName = firstName.substring(0, 1).toUpperCase() + firstName.substring(1);
 	}
 
 	public String getLastName() {

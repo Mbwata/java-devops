@@ -59,14 +59,15 @@ public class EmployeeVOIT {
      * Test of getFirstName method, of class EmployeeVO.
      */
     @Test
-    public void testGetFirstName() {
+    public void testGetFirstName1() {
         System.out.println("getFirstName");
         EmployeeVO instance = new EmployeeVO();
-        String expResult = "";
+        instance.setFirstName("matt");
+        String expResult = "Matt";
         String result = instance.getFirstName();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
