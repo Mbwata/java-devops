@@ -14,10 +14,6 @@
 			<td>${employee.firstName} ${employee.lastName}</td>
 		</tr>
 		<tr>
-			<td>ID :</td>
-			<td>${id}</td>
-		</tr>
-		<tr>
 			<td>Email :</td>
 			<td>${employee.email}</td>
 		</tr>
