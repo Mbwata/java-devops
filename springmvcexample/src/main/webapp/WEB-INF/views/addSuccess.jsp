@@ -15,7 +15,7 @@
 		</tr>
 		<tr>
 			<td>Email :</td>
-			<td>${employee.email}</td>
+			<td>${employee.email} </td>
 		</tr>
 	</table>
 </body>
