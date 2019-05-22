@@ -6,7 +6,9 @@
 package com.howtodoinjava.demo.controller;
 
 import com.howtodoinjava.demo.model.EmployeeVO;
+import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -18,9 +20,9 @@ import org.springframework.web.bind.support.SessionStatus;
  *
  * @author matthouse
  */
-public class EmployeeControllerIT {
+public class EmployeeControllerTest {
     
-    public EmployeeControllerIT() {
+    public EmployeeControllerTest() {
     }
     
     @BeforeClass
@@ -29,6 +31,14 @@ public class EmployeeControllerIT {
     
     @AfterClass
     public static void tearDownClass() {
+    }
+    
+    @Before
+    public void setUp() {
+    }
+    
+    @After
+    public void tearDown() {
     }
 
     /**
@@ -41,6 +51,7 @@ public class EmployeeControllerIT {
         EmployeeController instance = new EmployeeController();
         String expResult = "";
         String result = instance.setupForm(model);
+        System.out.println(result);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
