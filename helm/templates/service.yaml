@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: employee
+  namespace: {{ .Values.metadata.namespace }}
+spec:
+  ports:
+    - port: {{ .Values.service.externalport }}
+      targetPort: {{ .Values.service.internalport }}
+      protocol: TCP
+  type: NodePort
+  selector:
+    app: employee
+  type: LoadBalancer
+  sessionAffinity: None
+  externalTrafficPolicy: Cluster
+status:
+  loadBalancer:
+    ingress:
+      - hostname: localhost
