@@ -1,5 +1,7 @@
-FROM tomcat:9.0
+FROM tomcat:8.0
 
-#RUN mkdir p ~/test
+RUN mkdir /usr/local/tomcat/matt
+
+RUN chmod 777 /usr/local/tomcat/matt
 
 COPY tomcat-users.xml /usr/local/tomcat/conf
