@@ -9,10 +9,8 @@ RUN mvn -f /home/app/pom.xml clean install
 #
 # Package stage
 #
-FROM tomcat:8.0
+FROM tomcat:9.0
 
 COPY tomcat-users.xml /usr/local/tomcat/conf
-
-#COPY tomcat-users.xml /CATALINA_HOME/conf
 
 COPY --from=build /home/app/target/springmvcexample.war /usr/local/tomcat/webapps/
