@@ -9,6 +9,6 @@ RUN mvn -f /home/app/pom.xml clean install
 #
 # Package stage
 #
-FROM housems\mattcat
+FROM housems/mattcat:latest
 
 COPY --from=build /home/app/target/springmvcexample.war /usr/local/tomcat/webapps/
