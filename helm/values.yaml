@@ -13,7 +13,7 @@ replicas:
 
 image:
   repository: housems/employee
-  tag: "v7"
+  tag: "latest"
   pullPolicy: Always
 
 nameOverride: ""
